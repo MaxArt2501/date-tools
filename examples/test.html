@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test DateTools</title>
+        <script type="text/javascript" src="../date-tools.js"></script>
+        <script type="text/javascript">
+            window.onload = function() {
+                var doDiv = function(content) {
+                        var div = document.createElement("div");
+                        div.innerHTML = content;
+                        document.body.appendChild(div);
+                    },
+                    date = new Date(),
+                    easter = DateTools.getEaster(date.getFullYear());
+                date = new Date(2009, 0);
+                for (var ts = +date, ets = ts + 365*864e5; ts <= ets; ts += 108e5) {
+                    date.setTime(ts);
+                    doDiv(DateTools.format(date, "Y-m-d H:i:s z o-W-N"));
+                }
+            };
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
