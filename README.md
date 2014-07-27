@@ -542,7 +542,7 @@ In practice, this is compatible with:
 
 The MIT License (MIT)
 
-Copyright (c) 2014
+Copyright (c) 2014 MaxArt2501
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
