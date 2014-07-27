@@ -564,4 +564,4 @@ var _locale = DateTools.i18n.en;
 
 return DateTools;
 
-});
+}));
